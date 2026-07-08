@@ -64,9 +64,23 @@ $ npm run publish "020-蓝色为什么最受欢迎"
 | 正文图片上传 | `media/uploadimg` | 返回 `mmbiz.qpic.cn` URL |
 | 创建草稿 | `draft/add` | 一次调用完成 |
 
+## HTML 能力（API 模式 vs Puppeteer 模式）
+
+| 元素 | Puppeteer | API |
+|------|-----------|-----|
+| `<table>` 表格 | ❌ 被 ProseMirror 净化 | ✅ 完整保留 |
+| 彩色背景 `background` | ❌ | ✅ |
+| 渐变色 `linear-gradient` | ❌ | ✅ |
+| Flex 布局 | ❌ | ✅ |
+| `<blockquote>` 多样化 | ⚠️ 有限 | ✅ |
+| 图片 | 外部 URL（可能不显示） | 自动下载→上传微信 CDN |
+
+> **API 模式下，所有标准 HTML/CSS（内联style）均可使用。** 仍然不支持外链 CSS、JavaScript、iframe。
+
 ## 局限
 
 - 需 AppID + AppSecret（个人订阅号需去开放平台获取）
 - 需配置 IP 白名单（换网络需重新添加）
+- 作者名不能超过 8 个字符（微信号限制）
 - 无法自动发布（需手动在后台/订阅号助手点「发表」）
 - 图片需逐张下载再上传，多图文章稍慢
