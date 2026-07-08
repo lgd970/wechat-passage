@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "login": "node src/login.js",
-    "publish": "node src/publish.js"
+    "publish": "node --env-file=.env src/api_publish.js",
+    "publish:puppeteer": "node src/publish_puppeteer.js",
+    "api": "node --env-file=.env src/api_publish.js"
   },
   "dependencies": {
     "clipboardy": "^5.3.1",
