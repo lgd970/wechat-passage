@@ -1,0 +1,10 @@
+node_modules/
+cookies.json
+.env
+article_content.html
+temp_*.html
+*.log
+debug_*.png
+qrcode*.png
+*.doc
+.DS_Store

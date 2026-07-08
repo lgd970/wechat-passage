@@ -1,0 +1,16 @@
+{
+  "name": "wechat-passage",
+  "version": "1.0.0",
+  "description": "微信公众号「对话即发布」工具 — 通过 Claude 对话驱动 Puppeteer 自动发布文章",
+  "type": "module",
+  "scripts": {
+    "login": "node src/login.js",
+    "publish": "node src/publish.js"
+  },
+  "dependencies": {
+    "clipboardy": "^5.3.1",
+    "puppeteer": "^24.6.1",
+    "wechat-mp-automation": "^1.3.2"
+  },
+  "allowScripts": {}
+}
