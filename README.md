@@ -184,4 +184,4 @@ MIT
 
 **Sponge × DeepSeek**
 
-微信公众号：反常识研究所
+微信公众号：SpongebobSquarepants
