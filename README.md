@@ -100,6 +100,28 @@ wechat-passage/
 - Google Chrome（Puppeteer 模式需要）
 - 微信公众平台 AppID + AppSecret
 
+## 详细文档
+
+| 版本 | 文档 |
+|------|------|
+| 🚀 API 模式 | [README-API.md](README-API.md) |
+| 🤖 Puppeteer 模式 | [README-Puppeteer.md](README-Puppeteer.md) |
+
+## 优劣对比
+
+| 维度 | 🚀 API | 🤖 Puppeteer |
+|------|--------|-------------|
+| **速度** | ⭐⭐⭐⭐⭐ ~3秒 | ⭐⭐⭐ ~15秒 |
+| **可靠性** | ⭐⭐⭐⭐⭐ 官方接口 | ⭐⭐⭐ UI 可能变动 |
+| **图片处理** | ⭐⭐⭐⭐⭐ 自动上传 CDN | ⭐⭐ 外部 URL 不稳定 |
+| **部署难度** | ⭐⭐⭐⭐ 需 AppID+白名单 | ⭐⭐⭐⭐⭐ 只需 Chrome |
+| **跨平台** | ⭐⭐⭐⭐⭐ 纯 HTTP | ⭐⭐⭐ 需配置 Chrome 路径 |
+| **维护成本** | ⭐⭐⭐⭐⭐ 低 | ⭐⭐⭐ 中 |
+| **最终发表** | 手动确认 | 手动确认 |
+| **推荐场景** | 日常使用 | 备用/调试 |
+
+> **结论：日常用 API，Puppeteer 留着当备用。** 两者最终都需要手动点发表（微信限制）。
+
 ## License
 
 MIT
