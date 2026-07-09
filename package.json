@@ -7,7 +7,9 @@
     "login": "node src/login.js",
     "publish": "node --env-file=.env src/api_publish.js",
     "publish:puppeteer": "node src/publish_puppeteer.js",
-    "api": "node --env-file=.env src/api_publish.js"
+    "api": "node --env-file=.env src/api_publish.js",
+    "auto": "node --env-file=.env src/auto.js",
+    "setup": "node --env-file=.env src/auto.js"
   },
   "dependencies": {
     "clipboardy": "^5.3.1",
